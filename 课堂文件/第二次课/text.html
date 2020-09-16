@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <style>
+            #name{
+                background-color: aquamarine;
+                font-size: 20px;
+            }
+            #profile{
+                background-color: bisque;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <P id="name">江西软件职业技术大学</P>
+        <p id="profile">个人简介</p>
+        <button id="btn1" type="submit">提交</button>
+        <button id="btn2" type="submit">清空</button>
+        <script>
+            var target1 = document.getElementById("btn1");
+            target1.onclick = function(){
+                alert("提交成功！");
+            }
+            var target2 = document.getElementById("btn2");
+            target2.onclick = function(){
+                alert("清空成功！");
+            }
+            document.body.onmouseenter = function(){
+                alert("我来了！");
+            }
+            document.body.onmousemove = function(){
+                console.log("我飘了~");
+            }
+            document.boby.onmouseleave =function(){
+                console.log("我滚了！");
+            }
+        </script>
+    </body>
+</html>
