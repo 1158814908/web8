@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>第十五次课</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function init(){
+            var target = window.document.getElementById("no3");
+            target.style.backgroundColor="red";
+        }
+        
+    </script>
+    <style>
+        #wrapper{
+            border: 5px solid yellowgreen;
+            overflow: hidden;
+            
+        }
+
+        #right{
+            width: 200px;
+            height: 200px;
+            background-color:blueviolet;
+            float: left;
+        }
+
+        #middle{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            float: left;
+        }
+        
+        #left{
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            float: left;   
+        }
+
+        #no2{
+            height: 50px;
+            width: 50px;
+            background-color: deepskyblue;
+            margin-top: 50px;
+        }
+        
+        #no2:hover{
+            width: 500px;
+            height: 500px;
+            transition: all ease 5s;
+        }
+        
+        #no3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(248, 240, 162);
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div id="wrapper">
+        <div id="right"></div>
+        <div id="middle"></div>
+        <div id="left"></div>
+    </div>
+    <div id="no2"></div>
+    <div id="no3"></div>
+</body>
+</html>
