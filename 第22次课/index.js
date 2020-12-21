@@ -8,10 +8,10 @@
         }
         return this.name
     }
-    return 200 + x.printName() + x()
-})((_=>{
-    this.name = 6666
-    console.log("this is pataya")
-    return 6999
-)
-})()
+//    return 200 + x.printName() + x()
+//})((_=>{
+//   this.name = 6666
+//   console.log("this is pataya") 
+//   return 6999
+//)
+//})()
