@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-    <My/>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <My/>*** -->
+    <N/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-import My from './components/My'
+// import My from './components/My'//***
+import N from './components/N'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    My
+    // My,//***
+    N
   }
 }
 </script>
 
 <style>
-#app {
+
+/* #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  background-color: blanchedalmond;
-}
+  background-color:green;
+} */
 </style>

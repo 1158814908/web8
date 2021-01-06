@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jquery.js</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <style>
+        span{
+            color: red;
+            font-size: 14px;
+        }
+
+        #apple{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <P>
+            <label for="">用户名：</label>
+            <input type="text" name="username" id="username">
+            <span id="tip1"></span>
+        </P>
+        <p>
+            <label for="">密码：</label>
+            <input type="password" name="password" id="password">
+            <span id="tip2"></span>
+        </p>
+        <p>
+            <input type="submit" value="登录">
+        </p>
+        <p>
+            <div id="apple"></div>
+        </p>
+    </div>
+    <script>
+        var _username = document.getElementById('username');
+        _username.onblur = function(){
+            //alert("欢迎登入！")
+            //alert(_username.value);//获取值
+            if(_username.value.length < 4){
+                //alert("亲，您的用户名长度小于4.");
+                var _tip1 = document.getElementById("tip1");
+                _tip1.innerHTML = "您输入的用户名长度小于4,请重新输入！";
+            }
+        }
+        var _password = document.getElementById('password');
+        _password.onblur = function(){
+            if(_password.value.length < 8){
+                var _tip2 = document.getElementById("tip2");
+                _tip2.innerHTML = "您输入的密码长度小于8，请重新输入！";
+            }
+        }
+        var target = $("#apple")
+        target.click(function(){
+            //alert("我被点击了");
+            //target.css("background-color","red");
+            target.css("width","400px");
+            target.css("height","400px");
+
+            //点击div后，颜色切换，从red切换到green
+            if("rgb(0,128,0)" == target.css("background-color")){
+                target.css("background-color","red")
+            }else if("rgb(255,0,0)" == target.css("background-color")){
+                target.css("background-color","green")
+            }
+            
+            
+            //点击div后，从green切换到red
+            
+        })
+    </script>
+</body>
+</html>
