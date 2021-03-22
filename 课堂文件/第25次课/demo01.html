@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>鼠标移动</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .no1{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 200px;
+        }
+        .no2{
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: darkorange;
+            text-align: center;
+            line-height: 200px;
+        }
+        .no1:hover{
+            background-color: deeppink;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+        }
+        .no2:hover{
+            background-color:cornflowerblue;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="no1" id="no1">
+        第一个div
+    </div>
+    <div class="no2" id="no2">
+        第二个div
+    </div>
+    <script>
+        function rgbToHex(r, g, b) {
+           return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+           }
+        document.addEventListener('click',function(e){
+        
+        document.bgColor=rgbToHex(122,142,168);
+     }) 
+     </script>
+</body>
+</html>
